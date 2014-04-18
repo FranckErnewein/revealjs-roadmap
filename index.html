@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+    <style>
+      .highlight{
+        color: #990000;
+      }
+    </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Roadmap<br>Front End<br>2014</h1>
+				</section>
+
+				<section>
+					<h2>Un peu d'histoire</h2>
+          <br>
+					<p>
+            Javascript @ 2000 ça donnait :
+					</p>
+          <pre><code>
+<input 
+  type="text" 
+  onclick="if(this.value='') alert('email manquant!')">
+          </code></pre>
+
+				</section>
+
+				<section>
+          <h2>En 15 ans</h2>
+          <ul>
+            <li>DHTML</li>
+            <li>AJAX</li>
+            <li>HTML5</li>
+          </ul>
+          <p>Le web deviens applicatif.</p>
+				</section>
+
+				<section>
+          <h2><code>onclick</code><br> c'est fini</h2>
+          <img src="img/chart-js.png" alt="">
+          <p>
+            source <a href="http://httparchive.org/trends.php?s=Top1000&minlabel=Jan+20+2011&maxlabel=Mar+1+2014#bytesJS&reqJS">httparchive.org</a>
+          </p>
+				</section>
+
+        <section>
+          <h2>Le web évolue? en partie.</h2>
+          <p>Ces 2 dernières années, la quantité moyenne de code JS par page est multpiliée par <b class="highlight"><u>20</u></b></p>
+          <br>
+          <p>La balise <code class="highlight">&lt;script&gt;</code> n'a pas bougé depuis 15 ans.</p>
+        </section>
+
+        <section>
+          <h2>Problème:</h2>
+          <h3>Comment organiser le web de demain sur la techno d'hier?</h3>
+        </section>
+
+				<section>
+          <h2>Solution:</h2>
+          <h3>Contourner le problème?</h3>
+          <br>
+          <ul>
+            <li>Plugin navigateur</li>
+            <li>Préprocesseur et générateur de code</li>
+            <li>Meta langage</li>
+          </ul>
+          <br>
+          <br>
+          <p>Pas vraiment...</p>
+				</section>
+
+        <section>
+          <h2>nodejs, le déclique.</h2>
+          <p>Et si on arretait de bricoler du DOM ?</p>
+          <p>Et si on prenait javascript au sérieux ?</p>
+        </section>
+
+        <section>
+          <h2>Javascript arrive à maturité</h2>
+          <ul>
+            <li>Système de dépendance</li>
+            <li>Package manager</li>
+            <li>Librairies objectives</li>
+            <li>Tests unitaires</li>
+            <li>etc.</li>
+          </ul>
+        </section>
+
+
+				<section>
+          <h2>Et talkspirit.js ?</h2>
+          <ul>
+            <li>Projet demarré en 2007</li>
+            <li>40000?? lignes de codes</li>
+            <li>3000?? fichiers javascript</li>
+            <li>10?? developpeurs consécutifs</li>
+          </ul>
+				</section>
+
+        
+        <section>
+          <h2>C'est grave docteur ?</h2>
+          <p>
+            <img src="img/bunny.jpg" alt="">
+          </p>
+        </section>
+
+				<section>
+          <h2>Non! Mais attention.</h2>
+          <p>Si on parle d'<i>architecte</i> en programmation, c'est qu'il faut faire attention aux fondations.</p>
+				</section>
+
+
+				<section>
+					<h2>Nos problèmes ?</h2>
+          <br>
+          <ol>
+            <li>Maintenabilité</li>
+            <li>Performance</li>
+            <li>Evolution</li>
+          </ol>
+				</section>
+
+        <section>
+           <h2>Solution?</h2>
+           <h1>RANGER!</h1>
+        </section>
+
+        <section>
+          <h2>Comment ?</h2>
+          <p>Le meilleur rangement, c'est de suivre les conventions.</p>
+          <br>
+          <div>
+            <blockquote class="twitter-tweet" align="center" lang="en"><p>0.29% of all IPv4 addresses downloaded an npm package last month <a href="http://t.co/nUPTtnqBbC">http://t.co/nUPTtnqBbC</a> 12341123/4277075968*100</p>&mdash; James Halliday (@substack) <a href="https://twitter.com/substack/statuses/448667860353552384">March 26, 2014</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </section>
+
+        <section>
+          <h2>Concrètement</h2>
+          <br>
+          <ul>
+            <li>Refactoriser l'existant avec itération</li>
+            <li>Ecrire des tests</li>
+            <li>Prendre soin de l'environement</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Résultats</h2>
+          <p>Un code bien fait est</p>
+          <ul>
+            <li>Stable</li>
+            <li>Portable</li>
+            <li>Réutilisable</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Merci</h2>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
